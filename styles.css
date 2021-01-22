@@ -1,0 +1,156 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: left;
+}
+
+/* ヘッダー */
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  opacity: 0.7; 
+  position: fixed;
+  z-index: 10;
+}
+
+.header li {
+  float: left;
+  color: black;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+/* トップ */
+.top {
+  background-image: url("../image/AnyConv.com__IMG_8218_2.jpg");
+  background-size: cover;
+  color: black;
+  text-align: center;
+  padding: 400px 0 300px 0;
+}
+
+.top-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.my-name {
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+
+/* プロフィール */
+.profile {
+  background-color: white;
+  padding: 60px 0;
+  color: black;
+}
+
+.profile-container {
+  width: 100%;
+}
+
+.profile-division {
+  float: left;
+  width: 50%;
+}
+
+.profile-image {
+  text-align: center;
+}
+
+.profile-image img {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.profile-paragragh {
+}
+
+.profile-paragragh h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.profile-paragragh p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* プログラミングスキル */
+ .my-skill {
+  background-image: url("../image/minatomirai__IMG_8136.jpg");
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 100px 0 150px 0;
+}
+
+.prog-skill {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skill-heading {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.skill-heading h2 {
+  font-size: 28px;
+  color: white;
+}
+
+.indi-skill {
+  float: left; 
+  width: 25%;
+}
+
+.indi-skill h3 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.indi-skill i {
+  font-size: 150px;
+  margin-bottom: 20px;
+}
+
+.indi-skill p {
+  width: 80%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.fa-code {
+  color: white;
+}
+
+.fa-js {
+  color: red;
+}
+
+.fa-laravel {
+  color: blue;
+}
+
+.fa-wordpress {
+  color: yellow;
+}
+
+.indi-skill p {
+  font-size: 14px;
+  color: white;
+}
