@@ -32,7 +32,7 @@
 
 /* トップ */
 .top {
-  background-image: url("../image/AnyConv.com__IMG_8218_2.jpg");
+  background-image: url("AnyConv.com__IMG_8218_2.jpg");
   background-size: cover;
   color: black;
   text-align: center;
@@ -90,7 +90,7 @@
 
 /* プログラミングスキル */
  .my-skill {
-  background-image: url("../image/minatomirai__IMG_8136.jpg");
+  background-image: url("minatomirai__IMG_8136.jpg");
   background-size: cover;
   text-align: center;
   color: white;
