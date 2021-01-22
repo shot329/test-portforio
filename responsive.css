@@ -1,0 +1,35 @@
+@media (max-width: 800px) {
+
+  /* プロフィール */
+  .top {
+    background-image: url("../image/AnyConv.com__IMG_8218_800.jpg");
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 250px 0 200px 0;
+  }
+  .profile-division {
+    width: 100%;
+  }
+  .profile-image img {
+    width: 50%;
+  }
+  .profile-paragragh {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* プログラミングスキル */
+  .indi-skill {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* プログラミングスキル */
+  .indi-skill {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
