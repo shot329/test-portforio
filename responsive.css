@@ -2,7 +2,7 @@
 
   /* プロフィール */
   .top {
-    background-image: url("AnyConv.com__IMG_8218_800.jpg");
+    background-image: url("../image/AnyConv.com__IMG_8218_800.jpg");
     background-size: cover;
     color: black;
     text-align: center;
@@ -12,7 +12,7 @@
     width: 100%;
   }
   .profile-image img {
-    width: 55%;
+    width: 50%;
   }
   .profile-paragragh {
     text-align: center;
@@ -24,12 +24,46 @@
     width: 50%;
     margin-bottom: 30px;
   }
+
+  /* 他のスキル */
+  .performance {
+    width: 100%;
+    text-align: center;
+  }
+
+  .performance h3 {
+    margin-top: 20px;
+  }
+
+  .ifbc-division {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ifbc-division h3 {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 600px) {
+
+  /* プロフィール */
+  .profile-paragragh {
+    padding: 0 20px;
+  }
+
   /* プログラミングスキル */
   .indi-skill {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  /* 他のスキル */
+  .performance img {
+    width: 75%;
+  }
+
+  .ifbc-division img {
+    width: 90%;
   }
 }
