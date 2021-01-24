@@ -43,6 +43,17 @@
   .ifbc-division h3 {
     margin-top: 20px;
   }
+
+  /* ワークアウト */
+  .indi-work {
+    width: 70%;
+    padding: 0;
+  }
+
+  /* コンタクトフォーム */
+  .form {
+    width: 60%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -65,5 +76,16 @@
 
   .ifbc-division img {
     width: 90%;
+  }
+
+  /* ワークアウト */
+  .indi-work {
+    width: 90%;
+    padding: 0;
+  }
+
+  /* コンタクトフォーム */
+  .form {
+    width: 80%;
   }
 }
