@@ -44,6 +44,16 @@
     margin-top: 20px;
   }
 
+  /* インターン */
+  .intern-division {
+    width: 100%;
+    text-align: center;
+  }
+
+  .intern-comment {
+    margin-top: 20px;
+  }
+
   /* ワークアウト */
   .indi-work {
     width: 70%;
@@ -57,6 +67,22 @@
 }
 
 @media (max-width: 600px) {
+  /* ヘッダー */
+  .header-left {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: black;
+  }
+
+  .header-right {
+    display: none;
+  }
 
   /* プロフィール */
   .profile-paragragh {

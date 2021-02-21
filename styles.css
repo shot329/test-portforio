@@ -21,13 +21,27 @@
   z-index: 10;
 }
 
-.header li {
+.header-left li {
   float: left;
   color: black;
   font-size: 16px;
   padding-top: 20px;
   padding-left: 20px;
   list-style: none;
+}
+
+.menu {
+  display: none;
+}
+
+.header-icon {
+  float: right;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  list-style: none;
+  padding-right: 25px;
+  padding-top: 10px;
 }
 
 /* トップ */
@@ -49,7 +63,6 @@
   opacity: 0.8;
 }
 
-
 /* プロフィール */
 .profile {
   padding: 60px 0;
@@ -70,15 +83,13 @@
 }
 
 .profile-image img {
-  margin: 0 auto;
   width: 300px;
-}
-
-.profile-paragragh {
 }
 
 .profile-paragragh h2 {
   font-size: 30px;
+  border-bottom: 2px solid black;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -109,6 +120,8 @@
 .skill-heading h2 {
   font-size: 30px;
   color: white;
+  border-bottom: 1px solid white;
+  display: inline-block;
 }
 
 .indi-skill {
@@ -154,17 +167,14 @@
   color: white;
 }
 
-
 /* 他のスキル（ふわっとフェードイン入れる？） */
-/*  */
 .other-skill {
-  padding: 60px 0;
+  padding: 60px 0 40px 0;
   color: black;
 }
 
 .other-container {
   margin: 0 auto;
-  /* width: 80%; */
 }
 
 .other-heading {
@@ -174,12 +184,14 @@
 }
 
 .other-heading h2 {
-  font-size: 28px;
+  font-size: 32px;
+  border-bottom: 1px solid black;
+  display: inline-block;
 }
 
 .my-performance {
   padding: 20px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -188,17 +200,24 @@
   width: 50%;
 }
 
-.performance img {
-  width: 300px;
+.performance-image {
+  text-align: right;
 }
 
-.performance-image {
-  text-align: center;
+.performance img {
+  width: 80%;
+}
+
+.comment {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .comment h3 {
   font-size: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid black;
+  display: inline-block;
 }
 
 .comment p {
@@ -208,13 +227,20 @@
 
 /* 他のスキル② */
 .other-skill2 {
-  padding: 30px 0;
+  padding: 0 0 60px 0;
   color: black;
   overflow: hidden;
 }
 
-.ifbc-container {
+.border {
+  border-top: 1px solid black;
   width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.ifbc-container {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -227,17 +253,24 @@
   width: 50%;
 }
 
-.ifbc-division img {
-  width: 360px;
+.ifbc-image {
+  text-align: left;
 }
 
-.ifbc-image {
-  text-align: center;
+.ifbc-division img {
+  width: 80%;
+}
+
+.ifbc-comment {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .ifbc-comment h3 {
   font-size: 26px;
   margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  display: inline-block;
 }
 
 .ifbc-comment p {
@@ -245,12 +278,66 @@
   margin-bottom: 15px;
 }
 
-/* ワークアウト */
- .workout {
+/* インターン */
+.ielove-intern {
   background-image: url("IMG_8139_3.jpg");
   background-size: cover;
-  padding: 60px 0 180px 0;
+  padding: 60px 0 80px 0;
   color: white;
+}
+
+.intern-container {
+  width: 100%;
+}
+
+.intern-heading {
+  text-align: center;
+  padding: 30px 0 60px 0;
+}
+
+.intern-heading h2 {
+  font-size: 32px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+}
+
+.intern-division {
+  width: 50%;
+  float: left;
+}
+
+.intern-image {
+  text-align: right;
+}
+
+.intern-division img {
+  width: 85%;
+}
+
+.intern-comment {
+  width: 80%;
+  margin: 0 auto;
+  background-color: black;
+}
+
+/* .intern-comment h3 {
+  font-size: 26px;
+  margin-bottom: 30px;
+} */
+
+.intern-comment p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+/* ワークアウト */
+ .workout {
+  /* background-image: url("IMG_8139_3.jpg");
+  background-size: cover; */
+  background-color: gray;
+  padding: 60px 0 180px 0;
+  color: black;
   text-align: center;
 }
 
