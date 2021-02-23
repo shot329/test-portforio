@@ -7,22 +7,41 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="responsive.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 </head>
 <body>
   <div class="header">
     <div class="header-left">
       <ul>
-        <li>about</li>
-        <li>skill</li>
-        <li>workout</li>
+        <li class="first"><a href="#">Sho Tamura</a></li>
+        <li><a href="#profile">profile</a></li>
+        <li><a href="#skill">skill</a></li>
+        <li><a href="#activity">activity</a></li>
+        <li><a href="#workout">workout</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </div>
-    <span class="menu"><i class="fas fa-bars"></i></span>
+    <span class="menu" id="menulist"><i class="fas fa-bars"></i></span>
     <div class="header-right">
-      <li class="header-icon"><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
-      <li class="header-icon"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-      <li class="header-icon"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-      <li class="header-icon"><a href="#"><i class="fab fa-line"></i></a></li>
+      <li class="header-icon"><a target="blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+      <li class="header-icon"><a target="blank" href="#"><i class="fab fa-twitter-square"></i></a></li>
+      <li class="header-icon"><a target="blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+      <li class="header-icon"><a target="blank" href="#"><i class="fab fa-line"></i></a></li>
+    </div>
+    <!-- overlay -->
+    <div class="overlay">
+      <!-- <span id="close"><i class="fas fa-times"></i></span> -->
+      <nav>
+        <ul>
+          <li><a href="#">top</a></li>
+          <li><a href="#profile">profile</a></li>
+          <li><a href="#skill">skill</a></li>
+          <li><a href="#activity">activity</a></li>
+          <li><a href="#workout">workout</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 
@@ -34,7 +53,7 @@
   </div>
 
   <!-- プロフィール -->
-  <div class="profile">
+  <div class="profile" id="profile">
     <div class="profile-container">
       <div class="profile-division profile-image">
         <img src="Prefore2.JPG" alt="">
@@ -52,7 +71,7 @@
   </div>
 
   <!-- Webスキル -->
-  <div class="my-skill">
+  <div class="my-skill" id="skill">
     <div class="prog-skill">
       <div class="skill-heading">
         <h2>Web skills</h2>
@@ -83,7 +102,7 @@
   </div>
   
   <!-- 他のスキル -->
-  <div class="other-skill">
+  <div class="other-skill" id="activity">
     <div class="other-container">
       <div class="other-heading">
         <h2>My private activity</h2>
@@ -95,9 +114,9 @@
         <div class="performance">
           <div class="comment">
             <h3>サークル内大会優勝</h3>
-            <p class="comment1">大学２年生の夏、サークル内の大会で優勝しました。</p>
-            <p>２年生が優勝したのは、サークル史上僕が初めてです。</p>
-            <p>大学１年の冬、大会でベスト４以上の結果を残すという目標を設定しました。</p>
+            <p class="comment1">大学２年生の夏、サークル内の大会で優勝という結果を出しました。</p>
+            <p>サークル史上初めて、2年生として優勝しました。</p>
+            <p>私は大学１年の冬、大会でベスト４以上の結果を残すという高い目標を設定しました。</p>
             <p>その目標を達成するために、人一倍練習を積み重ね、日々の練習の記録を続けました。</p>
             <p>そして、優勝という目標以上の結果を達成し、大きな自信に繋がりました。</p>
           </div>
@@ -152,7 +171,7 @@
   </div>
 
   <!-- 成果物 -->
-  <div class="workout">
+  <div class="workout" id="workout">
     <div class="workout-container">
       <div class="workout-heading">
         <h2 class="test">workout</h2>
@@ -160,19 +179,28 @@
       </div>
       <div class="workout-image">
         <img class="indi-work" id="hikopro" src="hikopro.com_myportfolio_ (2).png" alt="">
-        <img class="indi-work" src="shamgod_index.html (4).png" alt="">
+        <a target="blank" href="https://shot329.github.io/test-shamgod/">
+          <img class="indi-work" src="shamgod_index.html (4).png" alt="">
+        </a>
         <img class="indi-work" src="isara.life_.png" alt="">
       </div>
     </div>
   </div>
 
   <!-- コンタクトフォーム -->
-  <div class="contact-form">
-    <h2>Contact form</h2>
+  <div class="contact-form" id="contact">
+    <h2>Contact</h2>
+    <div class="sns-icon">
+      <li class="line"><a target="blank" href="#"><i class="fab fa-line"></i></a></li>
+      <li class="instagram"><a target="blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+      <li class="twitter"><a target="blank" href="#"><i class="fab fa-twitter-square"></i></a></li>
+      <li class="facebook"><a target="blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+    </div>
     <div class="form">
-      <input type="text" value="Your name">
-      <input type="text" value="Your Email">
-      <input type="text" value="Subject">
+      <!-- placeholder フォームにあらかじめ書かれているテキスト -->
+      <input type="text" placeholder="Your name">
+      <input type="text" placeholder="Your Email">
+      <input type="text" placeholder="Subject">
       <textarea name="" id="" cols="30" rows="10" value="messages.."></textarea>
       <input class="submit" type="submit" value="送信">
     </div>
@@ -180,8 +208,9 @@
 
   <!-- フッター -->
   <div class="footer">
-    <h2>my Portforio</h2>
+    <h2>My Portforio</h2>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
