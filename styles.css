@@ -3,6 +3,17 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit; /* 色初期化 */
+  transition: 0.3s;
+}
+
+a:hover {
+  color: aqua;
+  opacity: 0.9;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -28,10 +39,36 @@
   padding-top: 20px;
   padding-left: 20px;
   list-style: none;
+  cursor: pointer;
+}
+
+.header-left li:first-child {
+  padding-top: 12px;
+  font-size: 26px;
 }
 
 .menu {
   display: none;
+}
+
+/* overlay */
+.overlay {
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  pointer-events: none;/*   ポインターイベントの対象にならない。*/
+}
+
+/* .overlay #close {
+  font-size: 34px;
+} */
+
+.overlay li {
+  padding: 5px 0 5px 20px;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;/*     ポインターイベントの対象になるように規定値に戻す。*/
 }
 
 .header-icon {
@@ -167,7 +204,7 @@
   color: white;
 }
 
-/* 他のスキル（ふわっとフェードイン入れる？） */
+/* シャムスキル（ふわっとフェードイン入れる？） */
 .other-skill {
   padding: 60px 0 40px 0;
   color: black;
@@ -217,7 +254,6 @@
   font-size: 26px;
   margin-bottom: 30px;
   border-bottom: 1px solid black;
-  display: inline-block;
 }
 
 .comment p {
@@ -225,7 +261,7 @@
   margin-bottom: 15px;
 }
 
-/* 他のスキル② */
+/* IFBCについて */
 .other-skill2 {
   padding: 0 0 60px 0;
   color: black;
@@ -270,7 +306,7 @@
   font-size: 26px;
   margin-bottom: 20px;
   border-bottom: 1px solid black;
-  display: inline-block;
+  text-align: right;
 }
 
 .ifbc-comment p {
@@ -320,22 +356,14 @@
   background-color: black;
 }
 
-/* .intern-comment h3 {
-  font-size: 26px;
-  margin-bottom: 30px;
-} */
-
 .intern-comment p {
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-
 /* ワークアウト */
  .workout {
-  /* background-image: url("IMG_8139_3.jpg");
-  background-size: cover; */
-  background-color: gray;
+  background-color:white;
   padding: 60px 0 180px 0;
   color: black;
   text-align: center;
@@ -347,8 +375,10 @@
 }
 
 .workout-heading h2 {
-  font-size: 30px;
-  padding: 30px 0;
+  font-size: 32px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid black;
+  display: inline-block;
 } 
 
 .workout-heading p {
@@ -372,28 +402,68 @@
 /* コンタクトフォーム */
  .contact-form {
   padding: 60px 0;
+  /* background-color:lavender; */
+  background-image: url("harajuku__IMG_8277.jpg");
+  background-size: cover;
   text-align: center;
-  color: black;
+  color: white;
 }
-
-.form {
-  width: 40%;
-  margin: 20px auto;
-} 
 
 .contact-form h2 {
   font-size: 32px;
-  padding: 30px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+  display: inline-block;
 }
+
+.sns-icon {
+  width: 40%;
+  margin: 10px auto;
+}
+
+.sns-icon li {
+  list-style: none;
+  float: left;
+  font-size: 80px;
+  width: 25%;
+}
+
+.line {
+  color:lawngreen;
+}
+
+.instagram {
+  color: magenta;
+}
+
+.twitter {
+  color: deepskyblue;
+}
+
+.facebook {
+  color: dodgerblue;
+}
+
+.form {
+  width: 30%;
+  margin: 20px auto;
+} 
 
 input, textarea {
   width: 100%;
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 15px;
+  border-radius: 8px;
 }
 
 .submit {
   width: 20%;
+  background-color:gold;
+  transition: 00.3s;
+}
+
+.submit:hover {
+  opacity: 0.8;
 }
 
 /* フッター */

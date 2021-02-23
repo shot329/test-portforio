@@ -42,6 +42,7 @@
 
   .ifbc-division h3 {
     margin-top: 20px;
+    text-align: center;
   }
 
   /* インターン */
@@ -113,5 +114,13 @@
   /* コンタクトフォーム */
   .form {
     width: 80%;
+  }
+
+  .sns-icon {
+    width: 60%;
+  }
+
+  .sns-icon li {
+    width: 50%;
   }
 }
