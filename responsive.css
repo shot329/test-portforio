@@ -1,4 +1,8 @@
 @media (max-width: 800px) {
+  /* ヘッダー */
+  .header-right {
+    display: none;
+  }
 
   /* プロフィール */
   .top {
@@ -57,12 +61,12 @@
 
   /* ワークアウト */
   .indi-work {
-    width: 70%;
+    width: 100%;
     padding: 0;
   }
 
   /* コンタクトフォーム */
-  .form {
+  .sns-icon, .form {
     width: 60%;
   }
 }
@@ -107,8 +111,9 @@
 
   /* ワークアウト */
   .indi-work {
-    width: 90%;
+    width: 100%;
     padding: 0;
+    margin-bottom: 20px;
   }
 
   /* コンタクトフォーム */

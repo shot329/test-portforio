@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="responsive.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="rellax.min.js"></script>
 
 </head>
 <body>
@@ -46,7 +47,8 @@
   </div>
 
   <!-- トップ -->
-  <div class="top">
+  <div class="top rellax-target">
+    <!-- data-rellax-speed="-4" data-rellax-percentage="0.5" data-rellax-zindex="2" -->
     <div class="top-container">
       <h1 class="my-name">Sho Tamura</h1>
     </div>
@@ -177,12 +179,23 @@
         <h2 class="test">workout</h2>
         <p>以下は、制作物の一部です。</p>
       </div>
+
       <div class="workout-image">
-        <img class="indi-work" id="hikopro" src="hikopro.com_myportfolio_ (2).png" alt="">
-        <a target="blank" href="https://shot329.github.io/test-shamgod/">
-          <img class="indi-work" src="shamgod_index.html (4).png" alt="">
-        </a>
-        <img class="indi-work" src="isara.life_.png" alt="">
+        <div class="indi-work">
+          <img id="workout1" src="hikopro.com_myportfolio_ (2).png" width="100%" alt="">
+          <p class="text-contents">模写作品❶</p>
+        </div>
+        <div class="indi-work">
+          <a target="blank" href="https://shot329.github.io/test-shamgod/">
+            <img width="100%" src="shamgod_index.html (4).png" alt="">
+          </a>
+          <p class="text-contents">Web Site</p>
+        </div>
+        <div class="indi-work">
+          <img width="100%" src="isara.life_.png" alt="">
+          <p class="text-contents">模写作品❷</p>
+        </div>
+        <div class="clear"></div>
       </div>
     </div>
   </div>
@@ -211,6 +224,8 @@
     <h2>My Portforio</h2>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js">
+    var rellax = new Rellax('.rellax-target');
+  </script>
 </body>
 </html>
