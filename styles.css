@@ -105,7 +105,7 @@ a:hover {
   padding: 60px 0;
   background-color: whitesmoke;
   color: black;
-  z-index: 10;
+  z-index: 5;
   position: relative;
 }
 
@@ -207,24 +207,24 @@ a:hover {
   color: white;
 }
 
-/* シャムスキル（ふわっとフェードイン入れる？） */
-.other-skill {
+/* フリースタイルバスケ（ふわっとフェードイン入れる？） */
+.fsbb-wrapper {
   padding: 60px 0 40px 0;
   background-color: whitesmoke;
   color: black;
 }
 
-.other-container {
+.fsbb-container {
   margin: 0 auto;
 }
 
-.other-heading {
+.fsbb-heading {
   padding-top: 30px;
   padding-bottom: 40px;
   text-align: center;
 }
 
-.other-heading h2 {
+.fsbb-heading h2 {
   font-size: 32px;
   border-bottom: 1px solid black;
   display: inline-block;
@@ -266,7 +266,7 @@ a:hover {
 }
 
 /* IFBCについて */
-.other-skill2 {
+.ifbc-wrapper {
   padding: 0 0 60px 0;
   background-color: whitesmoke;
   color: black;
@@ -309,7 +309,7 @@ a:hover {
 
 .ifbc-comment h3 {
   font-size: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-bottom: 1px solid black;
   text-align: right;
 }
@@ -420,6 +420,7 @@ a:hover {
 
 .text-active {
   display: block;
+  pointer-events: none;
 }
 
 /* コンタクトフォーム */
